@@ -1,0 +1,104 @@
+/* Estilos para el encabezado */
+h1 {
+  text-align: center;
+  color: black;
+  background-color: white;
+  padding: 20px;
+  margin-top: 0;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+  background-color: #edeef0;
+  padding: 10px 0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: black;
+  color: white;
+}
+
+.logout {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.logout a {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.logout a:hover {
+  background-color: #ff0000;
+}
+
+/* Estilos para el contenido */
+.contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.secciones {
+  width: 80%;
+  margin-bottom: 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.seccion {
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+  background-color: white;
+  padding: 20px;
+  margin-top: 0;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+ul {
+  margin-top: 0;
+}
+
+/* Estilos para el pie de página */
+.pie {
+  text-align: center;
+  padding: 20px;
+  background-color: #edeef0;
+  width: 100%;
+  margin-top: 20px;
+}
+

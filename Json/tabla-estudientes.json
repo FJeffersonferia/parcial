@@ -1,0 +1,20 @@
+[
+    {
+        "Fecha": "2024-06-10",
+        "Nombre": "Juan Perez",
+        "Materia": "Matemáticas",
+        "Calificacion": 4.0
+    },
+    {
+        "Fecha": "2024-06-12",
+        "Nombre": "Maria Lopez",
+        "Materia": "Ciencias",
+        "Calificacion": 3.5
+    },
+    {
+        "Fecha": "2024-06-14",
+        "Nombre": "Carlos Rodriguez",
+        "Materia": "Historia",
+        "Calificacion": 2.8
+    }
+]

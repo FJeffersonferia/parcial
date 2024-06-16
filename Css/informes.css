@@ -1,0 +1,96 @@
+/* Estilos para el encabezado */
+.titulo {
+    text-align: center;
+    color: black;
+    background-color: white;
+    padding: 20px; /* Evita el margen predeterminado del encabezado */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #edeef0;
+    padding: 10px 0;
+    width: 100%; /* Asegurar que ocupe todo el ancho disponible */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para separar del contenido */
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px; /* Espacio entre elementos de la lista */
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px; /* Aumentar el espacio de relleno */
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: black;
+    color: white;
+}
+
+.logout {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.logout a {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.logout a:hover {
+    background-color: #ff0000;
+}
+
+/* Estilos para la tabla de recursos */
+.table {
+    margin: 20px 0; /* Margen superior e inferior para separar la tabla */
+    width: 100%;
+    overflow-x: auto; /* Permitir desplazamiento horizontal si es necesario */
+}
+
+.mitabla {
+    width: 100%;
+    border-collapse: collapse; /* Colapso de los bordes de la tabla */
+}
+
+.mitabla th, .mitabla td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.mitabla th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.mitabla caption {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el pie de página */
+.pie {
+    text-align: center;
+    padding: 20px;
+    background-color: #edeef0;
+    clear: both; /* Limpiar flotados */
+}
+
+footer {
+    margin-top: 20px;
+}
