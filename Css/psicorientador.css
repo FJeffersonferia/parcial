@@ -1,4 +1,4 @@
-/* General styles */
+/* Estilos generales */
 body {
     background-size: cover;
     background-repeat: no-repeat;
@@ -91,7 +91,8 @@ nav a:hover {
 .logout a:hover {
     background-color: #ff0000;
 }
-/* Estilos adicionales para el botón de "Agregar Estudiante" */
+
+/* Botón "Agregar Estudiante" */
 #agregarEstudianteBtn {
     background-color: #4CAF50; 
     color: white;
@@ -106,72 +107,46 @@ nav a:hover {
     background-color: #45a049; 
 }
 
-/* Table styles */
+/* Estilos para la tabla */
 .table {
     width: 80%;
     margin: 20px auto;
     overflow-x: auto;
 }
 
-table {
+.mitabla {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
 }
 
-th, td {
+.mitabla th, .mitabla td {
     padding: 10px;
     text-align: left;
+    border: 1px solid #ddd;
 }
 
-th {
+.mitabla th {
     background-color: #f2f2f2;
 }
 
-tr:nth-child(even) {
+.mitabla tr:nth-child(even) {
     background-color: #f9f9f9;
 }
-.pie {
-    text-align: center;
-    padding: 20px;
-    background-color: #edeef0;
+
+/* Estilos específicos para el botón "Eliminar" */
+.eliminar-btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-footer {
-    margin-top: 20px;
-}
-/* Agregué estilos para el contenido */
-.contenido {
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+.eliminar-btn:hover {
+    background-color: #ff0000;
 }
 
-.contenido h2 {
-    margin-top: 0;
-}
 
-.contenido p {
-    margin-bottom: 20px;
-}
 
-.contenido ul {
-    list-style-type: disc;
-    padding: 0 20px;
-}
-
-.contenido li {
-    margin-bottom: 10px;
-}
-.video-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-    padding: 20px;
-    border: 1px solid #ddd;
-    background-color: #f9f9f9;
-}
 
