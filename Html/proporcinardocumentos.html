@@ -18,7 +18,7 @@
                     <a href="#" class="dropbtn">Estudiantes</a>
                     <div class="dropdown-content">
                         <a href="listadeestudiantes.html">Ver y gestionar perfiles de estudiantes.</a>
-                        <a href="">Acceder a registros académicos y de comportamiento.</a>
+                        <a href="#">Acceder a registros académicos y de comportamiento.</a>
                     </div>
                 </li>
                 <li class="dropdown">
@@ -31,7 +31,6 @@
                     <a href="#" class="dropbtn">Documentación</a>
                     <div class="dropdown-content">
                         <a href="Planeacionyseguimiento.html">Proporcionar asistencia técnica y documentación relevante.</a>
-
                     </div>
                 </li>
                 <li class="logout">
@@ -41,21 +40,17 @@
         </nav>
     </div>
 
-    <h2>Subir Documento</h2>
-    <form id="formulario-subir-documento">
-        <label for="titulo-documento">Título del documento:</label>
-        <input type="text" id="titulo-documento" name="titulo-documento"><br><br>
-        <label for="descripcion-documento">Descripción del documento:</label>
-        <textarea id="descripcion-documento" name="descripcion-documento"></textarea><br><br>
-        <label for="archivo-documento">Seleccione el archivo:</label>
-        <input type="file" id="archivo-documento" name="archivo-documento"><br><br>
-        <button id="subir-documento-btn">Subir Documento</button>
-    </form>
-
-    <script>
-        // Aquí puedes agregar el código JavaScript para manejar el envío del formulario
-        // y subir el archivo al servidor
-    </script>
-
+    <div class="container">
+        <h2>Subir Documento</h2>
+        <form id="formulario-subir-documento">
+            <label for="titulo-documento">Título del documento:</label>
+            <input type="text" id="titulo-documento" name="titulo-documento">
+            <label for="descripcion-documento">Descripción del documento:</label>
+            <textarea id="descripcion-documento" name="descripcion-documento"></textarea>
+            <label for="archivo-documento">Seleccione el archivo:</label>
+            <input type="file" id="archivo-documento" name="archivo-documento">
+            <button id="subir-documento-btn" type="submit">Subir Documento</button>
+        </form>
+    </div>
 </body>
 </html>
