@@ -1,4 +1,3 @@
-// estudinates-gestion.js
 document.addEventListener('DOMContentLoaded', function() {
     const tablaEstudiantes = document.getElementById('MOST');
 
@@ -26,10 +25,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 const cellCalificacion = document.createElement('td');
                 cellCalificacion.textContent = estudiante.Calificacion;
 
+                const cellAccion = document.createElement('td');
+                const eliminarBtn = document.createElement('button');
+                eliminarBtn.textContent = 'Eliminar';
+                eliminarBtn.classList.add('eliminar-btn'); // Agregar clase para identificar el botón de eliminar
+                eliminarBtn.addEventListener('click', function() {
+                    row.style.display = 'none'; // Ocultar la fila al hacer clic en Eliminar
+                });
+                cellAccion.appendChild(eliminarBtn);
+
                 row.appendChild(cellFecha);
                 row.appendChild(cellNombre);
                 row.appendChild(cellGrado);
                 row.appendChild(cellCalificacion);
+                row.appendChild(cellAccion);
 
                 tablaEstudiantes.appendChild(row);
             });
