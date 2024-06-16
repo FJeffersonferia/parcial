@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Css/admin.css">
     <link rel="stylesheet" href="../Css/psicorientador.css">
+    <link rel="stylesheet" href="../Css/admin.css">
     <script src="../Js/Admin.js"></script>
-    <title>Document</title>
+    <title>Ver y gestionar perfiles de estudiantes</title>
 </head>
 <body>
     <h1>EduSafe</h1>
@@ -31,7 +31,6 @@
                     <a href="#" class="dropbtn">Documentación</a>
                     <div class="dropdown-content">
                         <a href="Planeacionyseguimiento.html">Proporcionar asistencia técnica y documentación relevante.</a>
-
                     </div>
                 </li>
                 <li class="logout">
@@ -42,25 +41,28 @@
     </div>
     <h2>Ver y gestionar perfiles de estudiantes.</h2>
     <div class="table">
-        <table border="1" class="mitabla">
+        <table border="1" class="mitabla" id="tabla-estudiantes">
             <thead>
                 <tr>
                     <th>Fecha</th>
                     <th>Nombre del estudiante</th>
                     <th>Grado</th>
                     <th>Calificación</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
-            <tbody id="MOST"></tbody>
+            <tbody id="MOST">
+                <!-- Aquí se insertarán dinámicamente las filas de estudiantes -->
+            </tbody>
         </table>
         <button id="agregarEstudianteBtn">Agregar Estudiante</button>
     </div>
-    <script src="../Js/estudinates-gestion.js" defer></script>
     <div id="contacto" class="pie">
         <footer>
             Contacta al 0180000 <br>
             www.edusafe.com <br>
         </footer>
     </div>
+    <script src="../Js/estudinates-gestion.js" defer></script>
 </body>
 </html>
