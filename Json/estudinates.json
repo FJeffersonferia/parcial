@@ -1,0 +1,62 @@
+[
+    {
+        "Fecha": "2024-06-10",
+        "Nombre": "Juan Perez",
+        "Materia": "Matemáticas",
+        "Calificacion": 4.0
+    },
+    {
+        "Fecha": "2024-06-12",
+        "Nombre": "Maria Lopez",
+        "Materia": "Ciencias",
+        "Calificacion": 3.5
+    },
+    {
+        "Fecha": "2024-06-14",
+        "Nombre": "Carlos Rodriguez",
+        "Materia": "Historia",
+        "Calificacion": 2.8
+    },
+    {
+        "Fecha": "2024-06-15",
+        "Nombre": "Ana Gomez",
+        "Materia": "Geografía",
+        "Calificacion": 3.7
+    },
+    {
+        "Fecha": "2024-06-17",
+        "Nombre": "Luis Martinez",
+        "Materia": "Física",
+        "Calificacion": 3.9
+    },
+    {
+        "Fecha": "2024-06-18",
+        "Nombre": "Elena Torres",
+        "Materia": "Química",
+        "Calificacion": 4.2
+    },
+    {
+        "Fecha": "2024-06-19",
+        "Nombre": "Jorge Hernandez",
+        "Materia": "Biología",
+        "Calificacion": 3.4
+    },
+    {
+        "Fecha": "2024-06-21",
+        "Nombre": "Sara Ramirez",
+        "Materia": "Literatura",
+        "Calificacion": 3.6
+    },
+    {
+        "Fecha": "2024-06-22",
+        "Nombre": "David Sanchez",
+        "Materia": "Inglés",
+        "Calificacion": 4.1
+    },
+    {
+        "Fecha": "2024-06-23",
+        "Nombre": "Laura Vargas",
+        "Materia": "Arte",
+        "Calificacion": 3.8
+    }
+]

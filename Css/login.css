@@ -1,0 +1,87 @@
+/* General styles */
+body {
+    background-color: #FAF8F6; /* Blanco hueso */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container styles */
+#container {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Title styles */
+h1 {
+    color: #343A40; /* Gris oscuro */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Label styles */
+label {
+    color: #343A40; /* Gris oscuro */
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #CED4DA;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Radio buttons styles */
+.radio-container {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+input[type="radio"] {
+    margin: 0 5px;
+}
+
+label[for="admin"],
+label[for="usuario"],
+label[for="psicorientador"] {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* Button styles */
+.btn {
+    background-color: #343A40; /* Gris oscuro */
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px; /* Añadido margen superior */
+}
+
+.btn:hover {
+    background-color: #5A6268; /* Gris más claro */
+}
+
+/* Message styles */
+#mensaje {
+    margin-top: 15px;
+    color: #28A745;
+    font-size: 16px;
+}
