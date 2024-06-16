@@ -27,6 +27,11 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Form styles */
+form {
+    text-align: left; /* Alineación del texto en los campos del formulario */
+}
+
 /* Label styles */
 label {
     color: #343A40;
@@ -36,10 +41,13 @@ label {
 }
 
 /* Input styles */
-input[type="text"] {
-    width: calc(100% - 16px); /* Ajuste para compensar el padding y border */
-    padding: 8px;
-    margin-bottom: 10px;
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #CED4DA;
     border-radius: 4px;
     box-sizing: border-box;
@@ -49,9 +57,6 @@ input[type="text"] {
 input[type="checkbox"] {
     margin-right: 5px;
 }
-
-
-
 
 /* Button styles */
 button[type="submit"] {
@@ -64,9 +69,23 @@ button[type="submit"] {
     width: 100%;
     font-size: 16px;
     margin-top: 10px; /* Añadido margen superior */
-
 }
 
 button[type="submit"]:hover {
-    background-color: black;
+    background-color: #1E2124; /* Gris más oscuro al hacer hover */
 }
+
+/* Link styles */
+p {
+    margin-top: 10px;
+}
+
+p a {
+    color: #007BFF; /* Color azul del enlace */
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline; /* Subrayado al hacer hover */
+}
+
