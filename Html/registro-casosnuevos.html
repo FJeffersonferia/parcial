@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Casos de Nuevos Estudiantes - EduSafe</title>
+    <link rel="stylesheet" href="../Css/registro-casosnuevos.css">
+</head>
+<body>
+    <h1>EduSafe</h1>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Estudiantes</a>
+                    <div class="dropdown-content">
+                        <a href="listadeestudiantes.html">Lista de estudiantes bajo seguimiento</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Casos</a>
+                    <div class="dropdown-content">
+                        <a href="registro-casosnuevos.html">Registro de nuevos casos</a>
+                        
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Intervenciones</a>
+                    <div class="dropdown-content">
+                        <a href="Planeacionyseguimiento.html">Planificación y seguimiento de intervenciones</a>
+                    </div>
+                </li>
+                <li class="logout">
+                    <a href="../Html/Login.html">Cerrar Sesión</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="items">
+            <form class="frm">
+                <h3>Registro de Casos de Nuevos Estudiantes</h3>
+                <label for="ciudad">Nombre de la Institución</label> <br>
+                <input type="text" id="ciudad" placeholder="Escriba el nombre de la Institución" /><br>
+                <label for="apellidos">Apellidos</label> <br>
+                <input type="text" id="apellidos" placeholder="Escriba los apellidos" /><br>
+                <label for="nombres">Nombres</label> <br>
+                <input type="text" id="nombres" placeholder="Nombre" maxlength="10" minlength="1" /><br>
+                <label for="edad">Edad</label> <br>
+                <input type="number" id="edad" min="1" max="50" /><br>
+                <label>Género</label> <br>
+                <label for="masculino">M</label> 
+                <input type="radio" name="sexo" id="masculino" />
+                <label for="femenino">F</label> 
+                <input type="radio" name="sexo" id="femenino" /><br>
+                <label for="otro">Otro</label>
+                <input type="radio" name="sexo" id="otro"><br>
+                <br>
+                <label>Grado del estudiante</label> <br>
+                <select>
+                    <option selected="true">6° Grado</option>
+                    <option>7° Grado</option>
+                    <option>8° Grado</option>
+                    <option>9° Grado</option>
+                    <option>10° Grado</option>
+                    <option >11° Grado</option>
+                </select><br>
+                <label for="nac">Fecha de nacimiento</label> <br>
+                <input type="date" id="nac" ><br>
+                <label for="descripcion">Descripción del problema</label> <br>
+                <textarea id="descripcion" rows="4" placeholder="Describa el problema..."></textarea><br>
+                <input type="button" value="Enviar" class="button-blue">
+
+            </form>
+        </div>
+    </div>
+    <div class="pie">
+        <footer>
+            Contacta al 0180000 <br>
+            www.edusafe.com <br>
+        </footer>
+    </div>
+</body>
+</html>

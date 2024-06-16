@@ -1,0 +1,85 @@
+h1 {
+    text-align: center;
+    color: black;
+    background-color: white;
+    padding: 20px;
+}
+nav {
+    background-color: #edeef0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+  }
+  
+  nav a:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .logout {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  
+  .logout a {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .logout a:hover {
+    background-color: #ff0000;
+  }
+.contenido {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contenido h2 {
+    text-align: center;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contenido p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.mapa-container {
+    margin-top: 20px;
+}
+
+.pie {
+    text-align: center;
+    padding: 20px;
+    background-color: #edeef0;
+}
+
+footer {
+    margin-top: 20px;
+}

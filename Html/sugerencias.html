@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugerencias - EduSafe</title>
+    <link rel="stylesheet" href="../Css/sugerencias.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">EduSafe</h1>
+        <nav>
+            <ul>
+                <li><a href="../Html/Informes.html">Consultar informes</a></li>
+                <li><a href="../Html/quejas.html">Buzon de quejas y reclamos</a></li>
+                <li><a href="../Html/Sugerencias.html">Sugerencias</a></li>
+                <li><a href="../Html/Profesores.html">Lista de profesores</a></li>
+                <li><a href="">Contacto</a></li>
+                <li class="logout"><a href="../Html/Login.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+
+        <div class="contenido">
+            <h2>Envía tus sugerencias</h2>
+            <form id="formulario-sugerencias">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="sugerencia">Sugerencia:</label><br>
+                <textarea id="sugerencia" name="sugerencia" rows="4" cols="50" required></textarea><br><br>
+
+                <button type="submit">Enviar Sugerencia</button>
+            </form>
+        </div>
+
+        <div class="pie">
+            <footer>
+                Contacta al 0180000 <br>
+                www.edusafe.com <br>
+            </footer>
+        </div>
+    </div>
+
+    <script src="../Js/sugerencia.js"></script>
+    
+</body>
+</html>
