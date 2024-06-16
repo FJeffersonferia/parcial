@@ -2,7 +2,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const tablaRecursos = document.getElementById('lista-recursos');
 
     fetch('https://raw.githubusercontent.com/FJeffersonferia/estudiantes/main/tabla-estudientes.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
         .then(data => {
             console.log('Datos cargados:', data);
 
@@ -39,4 +44,3 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Error al cargar los datos:', error);
         });
 });
-
