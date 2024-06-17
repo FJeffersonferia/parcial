@@ -1,4 +1,3 @@
-
 const cargarCredenciales = () => {
   const url = "https://raw.githubusercontent.com/Enderderek69/Json/main/credenciales";
 
@@ -109,4 +108,3 @@ const mostrarMensaje = async (event) => {
 document.getElementById("user").addEventListener("input", validarUsuario);
 document.getElementById("pass").addEventListener("input", validarContraseña);
 document.getElementById("registroForm").addEventListener("submit", mostrarMensaje);
-
