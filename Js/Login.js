@@ -16,25 +16,20 @@ const cargarCredenciales = () => {
     });
 };
 
-// Función para mostrar errores en la página con temporizador
 const mostrarErrorEnPagina = (mensaje) => {
   const mensajeDiv = document.getElementById("mensaje");
   mensajeDiv.innerText = mensaje;
   mensajeDiv.style.display = "block";
-
-  // Ocultar el mensaje después de 3 segundos
   setTimeout(() => {
     mensajeDiv.style.display = "none";
   }, 3000);
 };
 
-// Función para ocultar el mensaje de error en la página
 const ocultarErrorEnPagina = () => {
   const mensajeDiv = document.getElementById("mensaje");
   mensajeDiv.style.display = "none";
 };
 
-// Validación en tiempo real para el campo de usuario
 const validarUsuario = () => {
   const usuarioInput = document.getElementById("user");
   const usuarioValue = usuarioInput.value.trim();
@@ -48,7 +43,6 @@ const validarUsuario = () => {
   return true;
 };
 
-// Validación en tiempo real para el campo de contraseña
 const validarContraseña = () => {
   const contraseñaInput = document.getElementById("pass");
   const contraseñaValue = contraseñaInput.value.trim();
@@ -62,7 +56,6 @@ const validarContraseña = () => {
   return true;
 };
 
-// Función para validar el campo de rol
 const validarRol = () => {
   const rol = document.querySelector('input[name="rol"]:checked');
 
@@ -75,11 +68,9 @@ const validarRol = () => {
   return true;
 };
 
-// Función para manejar el envío del formulario
 const mostrarMensaje = async (event) => {
   event.preventDefault();
 
-  // Validar usuario, contraseña y rol antes de intentar cargar las credenciales
   if (!validarUsuario() || !validarContraseña() || !validarRol()) {
     return;
   }
@@ -89,10 +80,8 @@ const mostrarMensaje = async (event) => {
   const rolValue = document.querySelector('input[name="rol"]:checked').value;
 
   try {
-    // Cargar las credenciales desde el archivo JSON
     const usuarios = await cargarCredenciales();
 
-    // Verificar si las credenciales del usuario existen en el archivo JSON
     const usuarioValido = usuarios.find(
       (u) => u.user === usuarioValue &&
              u.pass === contraseñaValue &&
@@ -100,11 +89,8 @@ const mostrarMensaje = async (event) => {
     );
 
     if (usuarioValido) {
-      // Guardar las credenciales en localStorage
-      localStorage.setItem('user', usuarioValue);
-      localStorage.setItem('rol', rolValue);
+      localStorage.setItem('sessionToken', btoa(JSON.stringify({ user: usuarioValue, rol: rolValue })));
 
-      // Redirigir a la página correspondiente según el rol
       if (rolValue === "Administrador") {
         window.location.href = "../Html/admin.html";
       } else if (rolValue === "Usuario") {
@@ -113,18 +99,14 @@ const mostrarMensaje = async (event) => {
         window.location.href = "../Html/psicorientador.html";
       }
     } else {
-      // Mostrar un mensaje genérico de credenciales incorrectas
       mostrarErrorEnPagina("Credenciales incorrectas. Verifique los datos e intente nuevamente.");
     }
   } catch (error) {
-    // Mostrar un mensaje de error al cargar las credenciales
     mostrarErrorEnPagina("Error al cargar las credenciales. Inténtelo más tarde.");
   }
 };
 
-// Agregar eventos para la validación en tiempo real
 document.getElementById("user").addEventListener("input", validarUsuario);
 document.getElementById("pass").addEventListener("input", validarContraseña);
-
-// Agregar evento al formulario
 document.getElementById("registroForm").addEventListener("submit", mostrarMensaje);
+
