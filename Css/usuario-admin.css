@@ -1,0 +1,40 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f0f0f0;
+}
+button {
+    background-color: #f44336; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 8px 16px; /* Espaciado interno */
+    cursor: pointer; /* Cursor al pasar por encima */
+    border-radius: 4px; /* Borde redondeado */
+    font-size: 14px; /* Tamaño de la fuente */
+}
+
+button:hover {
+    background-color: #d32f2f; /* Color de fondo al pasar por encima */
+}
+/* Estilos para el botón "Agregar Estudiante" */
+#agregarEstudianteBtn {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cursor al pasar por encima */
+    border-radius: 4px; /* Borde redondeado */
+    font-size: 14px; /* Tamaño de la fuente */
+    margin-top: 20px; /* Margen superior para separarlo de la tabla */
+}
+
+#agregarEstudianteBtn:hover {
+    background-color: #45a049; /* Color de fondo al pasar por encima */
+}

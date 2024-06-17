@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/admin.css">
+    <link rel="stylesheet" href="../Css/usuario-admin.css">
+    <title>Panel de Administración - Usuarios</title>
+</head>
+<body>
+    <h1>EduSafe</h1>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Usuarios</a>
+                    <div class="dropdown-content">
+                        <a href="verygestionar.html">Ver y gestionar perfiles de estudiantes.</a>
+                        <a href="">Ver usuarios</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Usuarios</a>
+                    <div class="dropdown-content">
+                        <a href="Crear_usuarios.html">Crear usuarios</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Documentación</a>
+                    <div class="dropdown-content">
+                        <a href="proporcinardocumentos.html">Proporcionar asistencia técnica y documentación relevante.</a>
+                    </div>
+                </li>
+                <li class="logout">
+                    <a href="../Html/Login.html">Cerrar Sesión</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <h2>Usuarios</h2>
+    <table id="tabla-usuarios">
+        <thead>
+            <tr>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+                <th>Rol</th>
+                <th>Acción</th> <!-- Columna para el botón de "Eliminar" -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Filas de usuarios se generarán dinámicamente -->
+        </tbody>
+    </table>
+    
+    <!-- Botón para agregar estudiante -->
+    <button id="agregarEstudianteBtn" onclick="redireccionar()">Agregar Estudiante</button>
+    
+    <script src="../Js/usuarios-admin.js" defer></script>
+</body>
+</html>
