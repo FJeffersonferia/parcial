@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../Css/bootstrap.css">
+    <link rel="icon" href="Img/Icon.png">
+    <script src="../Js/Login.js" defer></script>
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100 bg-light">
+    <div class="container bg-white p-4 rounded shadow" style="width: 300px; text-align: center;">
+        <h1 class="text-dark mb-4">Inicio de sesión</h1>
+        <form id="registroForm">
+            <div class="mb-3 text-start">
+                <label for="user" class="form-label">Usuario</label>
+                <input type="text" id="user" class="form-control" placeholder="Escriba su usuario">
+            </div>
+            <div class="mb-3 text-start">
+                <label for="pass" class="form-label">Contraseña</label>
+                <input type="password" id="pass" class="form-control" placeholder="Escriba su contraseña">
+            </div>
+            <div class="mb-3 text-start">
+                <label for="rol" class="form-label">Rol</label>
+                <div class="form-check">
+                    <input type="radio" id="admin" name="rol" value="Administrador" class="form-check-input">
+                    <label for="admin" class="form-check-label">Administrador</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="usuario" name="rol" value="Usuario" class="form-check-input">
+                    <label for="usuario" class="form-check-label">Usuario</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="psicorientador" name="rol" value="Psicorientador" class="form-check-input">
+                    <label for="psicorientador" class="form-check-label">Psicorientador</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-dark w-100 mt-3">Enviar</button>
+        </form>
+        <div id="mensaje" class="mt-3 text-success" style="display:none;"></div>
+        <a href="../Html/registro.html" class="d-block mt-3">¿No tienes cuenta? ¡Regístrate aquí!</a>
+    </div>
+</body>
+</html>
