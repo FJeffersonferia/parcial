@@ -22,18 +22,11 @@
             </div>
             <div class="mb-3 text-start">
                 <label for="rol" class="form-label">Rol</label>
-                <div class="form-check">
-                    <input type="radio" id="admin" name="rol" value="Administrador" class="form-check-input">
-                    <label for="admin" class="form-check-label">Administrador</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" id="usuario" name="rol" value="Usuario" class="form-check-input">
-                    <label for="usuario" class="form-check-label">Usuario</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" id="psicorientador" name="rol" value="Psicorientador" class="form-check-input">
-                    <label for="psicorientador" class="form-check-label">Psicorientador</label>
-                </div>
+                <select id="rol" class="form-select">
+                    <option value="Administrador">Administrador</option>
+                    <option value="Usuario">Usuario</option>
+                    <option value="Psicorientador">Psicorientador</option>
+                </select>
             </div>
             <button type="submit" class="btn btn-dark w-100 mt-3">Enviar</button>
         </form>

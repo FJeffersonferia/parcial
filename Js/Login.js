@@ -65,9 +65,10 @@ const validarContraseña = () => {
 
 // Función para validar el campo de rol
 const validarRol = () => {
-  const rol = document.querySelector('input[name="rol"]:checked');
+  const rolSelect = document.getElementById("rol");
+  const rolValue = rolSelect.value;
 
-  if (!rol) {
+  if (rolValue === "") {
     mostrarErrorEnPagina("Seleccione un rol");
     return false;
   }
@@ -87,7 +88,7 @@ const mostrarMensaje = async (event) => {
 
   const usuarioValue = document.getElementById("user").value.trim();
   const contraseñaValue = document.getElementById("pass").value.trim();
-  const rolValue = document.querySelector('input[name="rol"]:checked').value;
+  const rolValue = document.getElementById("rol").value;
 
   try {
     // Cargar las credenciales desde el archivo JSON
